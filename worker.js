@@ -30,8 +30,8 @@ const LINKS = [
   { label: "Sync", url: "https://sync.220044.xyz" },
   { label: "Google", url: "https://google.com" },
   { label: "Telegram", url: "https://t.me/SinGyoKu/" },
-  { label: "Cloudflare", url: "https://dash.cloudflare.com/?to=/:account/workers-and-pages" },
-  { label: "Inputtools", url: "https://www.google.com/inputtools/try/" },
+  { label: "CF", url: "https://dash.cloudflare.com/?to=/:account/workers-and-pages" },
+  { label: "Input", url: "https://www.google.com/inputtools/try/" },
 
 
 ];
