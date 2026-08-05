@@ -50,10 +50,6 @@ function renderHTML() {
     (l) => `          <li><a href="${escapeHtml(l.url)}">${escapeHtml(l.label)}</a></li>`
   ).join("\n");
 
-  // 12 是偶数，和原逻辑一样加 use-middle 类，中间加一条竖分割线
-  const isEven = LINKS.length % 2 === 0;
-  const midIndex = isEven ? LINKS.length / 2 : -1;
-
   return `<!DOCTYPE html>
 <html lang="zh">
 <head>
@@ -82,7 +78,7 @@ function renderHTML() {
             <h1>${escapeHtml(SITE.name)}</h1>
           </div>
         </div>
-        <nav id="nav"${isEven ? ' class="use-middle"' : ""}>
+        <nav id="nav">
           <ul>
 ${navItems}
           </ul>
@@ -100,8 +96,9 @@ ${navItems}
   </div>
 
   <script>
-    // 对应原 App.vue 里的逻辑：随机选背景图、预加载、淡入，
-    // 偶数链接时给中间那一项加 is-middle 类（配合 CSS 画中间竖线）。
+    // 对应原 App.vue 里的逻辑：随机选背景图、预加载、淡入。
+    // 导航栏改成了显式 Grid 布局（桌面 6 列两排 / 手机 2 列六排），
+    // 不再需要原来"偶数链接时中间加分割线"的 hack。
     (function () {
       var bgs = ${JSON.stringify(SITE.backgrounds)};
       var currentBg = bgs[Math.floor(Math.random() * bgs.length)];
@@ -132,11 +129,6 @@ ${navItems}
         setTimeout(reveal, 800);
       }
 
-      var midIndex = ${midIndex};
-      if (midIndex >= 0) {
-        var items = document.querySelectorAll("#nav li");
-        if (items[midIndex]) items[midIndex].classList.add("is-middle");
-      }
     })();
   </script>
 </body>
@@ -165,3 +157,4 @@ export default {
     return new Response("Not Found", { status: 404 });
   },
 };
+
