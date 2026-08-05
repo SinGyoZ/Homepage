@@ -1,0 +1,14 @@
+name = "喵喵喵"
+main = "worker.js"
+compatibility_date = "2026-08-03"
+
+# Workers 静态资源绑定：public/ 目录下的文件（css、图片、favicon）
+# 会被自动托管，worker.js 里通过 env.ASSETS.fetch(request) 兜底转发
+[assets]
+directory = "./public"
+binding = "ASSETS"
+
+# 部署后如果要绑定自定义域名，取消下面注释并改成你自己的域名
+ [[routes]]
+ pattern = "cc.220044.xyz"
+ zone_name = "220044.xyz"
