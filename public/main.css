@@ -172,9 +172,9 @@ body.is-preload #bg:before {
 }
 
 #bg:after {
-	transform: scale(1.125);
+	transform: scale(1.02);
 	transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-	filter: blur(10px);
+	filter: blur(1px);
 	background-image: var(--bg-image);
 	background-position: center;
 	background-size: cover;
