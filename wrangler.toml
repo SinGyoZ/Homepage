@@ -9,6 +9,6 @@ directory = "./public"
 binding = "ASSETS"
 
 # 部署后如果要绑定自定义域名，取消下面注释并改成你自己的域名
- [[routes]]
- pattern = "cc.220044.xyz"
- zone_name = "220044.xyz"
+# [[routes]]
+# pattern = "cc.220044.xyz"
+# zone_name = "220044.xyz"
