@@ -22,7 +22,7 @@ const LINKS = [
   { label: "探针", url: "https://tz.220044.xyz" },
   { label: "笔记", url: "https://bj.220044.xyz" },
   { label: "网盘", url: "https://pan.220044.xyz" },
-  { label: "工具", url: "https://sp.220044.xyz" },
+  { label: "面板", url: "https://web.220044.xyz" },
   { label: "图床", url: "https://www.nodeimage.com/" },
   { label: "邮箱", url: "mailto:loveleisiyi@gmail.com" },
   // ↓↓↓ 新增的 6 个，按需替换 ↓↓↓
@@ -31,7 +31,7 @@ const LINKS = [
   { label: "TOTP", url: "https://totp.220044.xyz" },
   { label: "TG", url: "https://t.me/SinGyoKu/" },
   { label: "CF", url: "https://dash.cloudflare.com/?to=/:account/workers-and-pages" },
-  { label: "Input", url: "https://www.google.com/inputtools/try/" },
+  { label: "Github", url: "https://github.com/SinGyoZ" },
 
 
 ];
