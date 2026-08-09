@@ -28,7 +28,7 @@ const LINKS = [
   // ↓↓↓ 新增的 6 个，按需替换 ↓↓↓
   { label: "Emby", url: "http://4837.220044.xyz:10010" },
   { label: "Sync", url: "https://sync.220044.xyz" },
-  { label: "Google", url: "https://google.com" },
+  { label: "TOTP", url: "https://totp.220044.xyz" },
   { label: "TG", url: "https://t.me/SinGyoKu/" },
   { label: "CF", url: "https://dash.cloudflare.com/?to=/:account/workers-and-pages" },
   { label: "Input", url: "https://www.google.com/inputtools/try/" },
