@@ -31,7 +31,7 @@ const LINKS = [
   { label: "TOTP", url: "https://totp.220044.xyz" },
   { label: "TG", url: "https://t.me/SinGyoKu/" },
   { label: "CF", url: "https://dash.cloudflare.com/?to=/:account/workers-and-pages" },
-  { label: "Github", url: "https://github.com/SinGyoZ" },
+  { label: "Git", url: "https://github.com/SinGyoZ" },
 
 
 ];
