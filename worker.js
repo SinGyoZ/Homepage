@@ -26,10 +26,10 @@ const LINKS = [
   { label: "图床", url: "https://www.nodeimage.com/" },
   { label: "邮箱", url: "mailto:loveleisiyi@gmail.com" },
   // ↓↓↓ 新增的 6 个，按需替换 ↓↓↓
-  { label: "Emby", url: "http://4837.220044.xyz:10010" },
-  { label: "Sync", url: "https://sync.220044.xyz" },
+  { label: "Emby", url: "http://emby.220044.xyz:10010" },
+  { label: "Game", url: "https://game.220044.xyz" },
   { label: "TOTP", url: "https://totp.220044.xyz" },
-  { label: "TG", url: "https://t.me/SinGyoKu/" },
+  { label: "SSH", url: "https://ssh.220044.xyz" },
   { label: "CF", url: "https://dash.cloudflare.com/?to=/:account/workers-and-pages" },
   { label: "Git", url: "https://github.com/SinGyoZ" },
 
